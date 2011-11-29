@@ -18,10 +18,10 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
   
-  s.add_runtime_dependency "oa-oauth", "~> 0.2.0"
-  s.add_runtime_dependency "oa-openid", "~> 0.2.0"
-  s.add_runtime_dependency "neo4j", "~> 1.1"
-  s.add_runtime_dependency "devise", "~> 1.3"
+  s.add_runtime_dependency "oa-oauth"
+  s.add_runtime_dependency "oa-openid"
+  s.add_runtime_dependency "neo4j"
+  s.add_runtime_dependency "devise"
   
   s.add_development_dependency "rails", "~> 3.0"
   s.add_development_dependency "rake"
